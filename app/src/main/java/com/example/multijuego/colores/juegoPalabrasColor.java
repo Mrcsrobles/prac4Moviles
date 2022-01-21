@@ -1,19 +1,18 @@
 package com.example.multijuego.colores;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.multijuego.Calculo.Calculo;
 import com.example.multijuego.R;
-import com.example.multijuego.results;
-
-import java.util.ArrayList;
+import com.example.multijuego.resultados.results;
 
 public class juegoPalabrasColor extends AppCompatActivity {
     int contador=0;
@@ -26,6 +25,14 @@ public class juegoPalabrasColor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        ActionBar mActionBar = getSupportActionBar();
+        mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00FF00")));
+
+
         setContentView(R.layout.activity_juego_palabras_color);
         cambiarColores();
     }
@@ -43,6 +50,8 @@ public class juegoPalabrasColor extends AppCompatActivity {
             puntuacion= this.calcularPuntuacion();
             Intent intent = new Intent(getBaseContext(), results.class);
             intent.putExtra("PUNTUACION", this.puntuacion);
+            intent.putExtra("JUEGO", 0);
+
             startActivity(intent);
         }
     }

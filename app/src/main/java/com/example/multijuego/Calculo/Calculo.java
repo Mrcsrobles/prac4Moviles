@@ -1,8 +1,11 @@
 package com.example.multijuego.Calculo;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.multijuego.R;
-import com.example.multijuego.results;
+import com.example.multijuego.resultados.results;
 
 public class Calculo extends AppCompatActivity {
     int contador = 1;
@@ -22,6 +25,12 @@ public class Calculo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        ActionBar mActionBar = getSupportActionBar();
+        mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00FF00")));
+
         setContentView(R.layout.activity_calculo);
         ponerPregunta();
     }
@@ -63,6 +72,7 @@ public class Calculo extends AppCompatActivity {
                 int puntuacion = this.correctas;
                 Intent intent = new Intent(getBaseContext(), results.class);
                 intent.putExtra("PUNTUACION", puntuacion);
+                intent.putExtra("JUEGO", 1);
                 startActivity(intent);
             }
 

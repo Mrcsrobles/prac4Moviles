@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.15353260869565216" />
         <entry key="app/src/main/res/layout/activity_calculo.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_instrucciones_calculo.xml" value="0.12001811594202899" />
         <entry key="app/src/main/res/layout/activity_instrucciones_palabras_color.xml" value="0.5" />
@@ -10,8 +11,11 @@
         <entry key="app/src/main/res/layout/activity_juegos.xml" value="0.6140350877192983" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_result_colores.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_result_graph.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_resultados_calculo.xml" value="0.12001811594202899" />
         <entry key="app/src/main/res/layout/activity_results.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/activity_results_games.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/action_bar.xml" value="0.25" />
       </map>
     </option>
   </component>

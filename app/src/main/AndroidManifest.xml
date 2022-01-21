@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Multijuego">
         <activity
+            android:name=".Ajustes"
+            android:exported="false" />
+        <activity
+            android:name=".resultados.result_graph"
+            android:exported="false" />
+        <activity
+            android:name=".resultados.results_games"
+            android:exported="false" />
+        <activity
             android:name=".Calculo.Calculo"
             android:exported="false" />
         <activity
@@ -25,7 +34,7 @@
             android:name=".Juegos"
             android:exported="false" />
         <activity
-            android:name=".results"
+            android:name=".resultados.results"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

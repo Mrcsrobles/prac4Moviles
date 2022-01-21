@@ -1,4 +1,4 @@
-package com.example.multijuego;
+package com.example.multijuego.resultados;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,15 +9,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.multijuego.Calculo.Instrucciones_calculo;
-import com.example.multijuego.colores.Instrucciones_palabras_color;
+import com.example.multijuego.R;
 
-public class Juegos extends AppCompatActivity {
+public class results_games extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
@@ -25,15 +23,19 @@ public class Juegos extends AppCompatActivity {
         mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00FF00")));
 
 
-        setContentView(R.layout.activity_juegos);
+        setContentView(R.layout.activity_results_games);
     }
+
     public void colores(View view) {
-        Intent intent = new Intent(this, Instrucciones_palabras_color.class);
-        startActivity(intent);
-    }
-    public void calculo(View view) {
-        Intent intent = new Intent(this, Instrucciones_calculo.class);
+        Intent intent = new Intent(getBaseContext(), result_graph.class);
+        intent.putExtra("JUEGO", 0);
         startActivity(intent);
     }
 
+
+    public void calculo(View view) {
+        Intent intent = new Intent(getBaseContext(), result_graph.class);
+        intent.putExtra("JUEGO", 1);
+        startActivity(intent);
+    }
 }
