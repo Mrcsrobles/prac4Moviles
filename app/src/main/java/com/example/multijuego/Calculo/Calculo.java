@@ -57,9 +57,9 @@ public class Calculo extends AppCompatActivity {
         EditText num = findViewById(R.id.editTextNumber);
         if (Integer.parseInt(num.getText().toString()) == sol) {
             this.correctas++;
-            num.setText("");
             MediaPlayer mp = MediaPlayer.create(Calculo.this, R.raw.correct);
             mp.start();
+            num.setText("");
             this.ponerPregunta();
         } else {
             errores++;
