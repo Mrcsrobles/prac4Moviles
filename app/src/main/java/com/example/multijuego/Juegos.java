@@ -21,7 +21,6 @@ public class Juegos extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        ActionBar mActionBar = getSupportActionBar();
 
 
         setContentView(R.layout.activity_juegos);
@@ -34,5 +33,8 @@ public class Juegos extends AppCompatActivity {
         Intent intent = new Intent(this, Instrucciones_calculo.class);
         startActivity(intent);
     }
-
+    public void espejo(View view) {
+        Intent intent = new Intent(this, instrucciones_simon_espejo.class);
+        startActivity(intent);
+    }
 }

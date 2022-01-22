@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Multijuego">
         <activity
+            android:name=".juego_espejo"
+            android:exported="false" />
+        <activity
+            android:name=".instrucciones_simon_espejo"
+            android:exported="false" />
+        <activity
             android:name=".Ajustes"
             android:exported="false" />
         <activity

@@ -16,8 +16,8 @@ import com.example.multijuego.resultados.results;
 
 public class juegoPalabrasColor extends AppCompatActivity {
     int contador=0;
-    String [] colores = {"rojo","azul","verde","rosa"};
-    String [] hexColores = {"#ff0000","#0001fe","#00fe00","#ff5eef"};
+    String [] colores = {"Rojo","Azul","Verde","Rosa","Negro"};
+    String [] hexColores = {"#ff0000","#0001fe","#00fe00","#ff5eef","#000000"};
 
     int correctas = 0;
     int puntuacion =0;
