@@ -12,8 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:colorBackground">@color/purple_500</item>
-        <item name ="android:textColor">#E9C46A</item>
+        <item name="android:colorBackground">#CDA3F1</item>
+        <item name ="android:textColor">#A67A00</item>
+        <item name ="android:textSize">22sp</item>
     </style>
 
 </resources>
