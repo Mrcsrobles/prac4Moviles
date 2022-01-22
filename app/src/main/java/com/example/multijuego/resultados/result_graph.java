@@ -51,6 +51,7 @@ public class result_graph extends AppCompatActivity {
         // on below line we are setting our title text size.
         graphView.setTitleTextSize(18);
 
+        graphView.setBackgroundColor(0);
         // on below line we are adding data series to our graph view.
         graphView.addSeries(series);
     }

@@ -16,8 +16,8 @@ import com.example.multijuego.resultados.results;
 
 public class juegoPalabrasColor extends AppCompatActivity {
     int contador=0;
-    String [] colores = {"rojo","azul","verde","morado","rosa"};
-    String [] hexColores = {"#ff0000","#0001fe","#00fe00","#7100ff","#ff5eef"};
+    String [] colores = {"rojo","azul","verde","rosa"};
+    String [] hexColores = {"#ff0000","#0001fe","#00fe00","#ff5eef"};
 
     int correctas = 0;
     int puntuacion =0;
@@ -30,7 +30,6 @@ public class juegoPalabrasColor extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00FF00")));
 
 
         setContentView(R.layout.activity_juego_palabras_color);
