@@ -1,11 +1,9 @@
 package puntuacion;
 
 import androidx.room.Entity;
-import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(primaryKeys = {"intento", "puntuación"})
 public class Puntuacion {
-    @PrimaryKey
     public int intento;
     public int puntuación;
     public int juego;

@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="32dp"
         android:onClick="salir"
-        android:text="Salir"
+        android:text="@string/salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="32dp"
         android:onClick="espejo"
-        android:text="Jugar"
+        android:text="@string/jugar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -35,7 +35,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="En este juego habrá 4 indicadores de colores en la parte superior que se iluminarán en cada ronda, y cuando sea tu turno debes recrear los colores que se iluminaron PERO, en los colores de la parte inferior que están colocados al revés de los de arriba "
+        android:text="@string/en_este_juego_habr_4_indicadores_de_colores_en_la_mitad_superior_que_se_iluminar_n_en_orden_cada_vez_que_le_des_al_bot_n_de_siguiente_y_cuando_sea_tu_turno_debes_repetir_la_secuencia_de_colores_que_se_iluminaron_pero_en_los_colores_de_la_parte_inferior_que_est_n_colocados_al_rev_s_de_los_de_arriba_solo_tienes_una_oportunidad_asi_que_piensalo_bien"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Simon says espejo"
+        android:text="@string/simon_says_espejo"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

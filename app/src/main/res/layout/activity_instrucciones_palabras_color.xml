@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="32dp"
         android:onClick="salir"
-        android:text="Salir"
+        android:text="@string/salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -24,7 +24,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="32dp"
         android:onClick="colores"
-        android:text="Jugar"
+        android:text="@string/jugar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -35,7 +35,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="En este juego aparecerá una palabra en el centro de la pantalla, tendrá un color indicado por el texto y el texto será de un color, tienes que indicar si tanto el texto escrito como el color que tiene son el mismo"
+        android:text="@string/en_este_juego_aparecer_una_palabra_en_el_centro_de_la_pantalla_dicha_palabra_tendr_un_color_indicado_por_el_texto_y_el_texto_ser_de_un_color_tienes_que_indicar_si_tanto_el_texto_escrito_como_el_color_que_tiene_son_el_mismo_no_hay_l_mite_de_fallos_ni_de_tiempo_asi_que_tomatelo_con_calma"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="El juego de las palabras de colores"
+        android:text="@string/el_juego_de_las_palabras_de_colores"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

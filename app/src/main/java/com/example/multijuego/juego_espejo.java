@@ -1,20 +1,17 @@
 package com.example.multijuego;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.multijuego.resultados.results;
 
 import java.util.ArrayList;
 
 public class juego_espejo extends AppCompatActivity {
-    private int pos = 0;
     private int round = 2;
     private ArrayList<Integer> sol = new ArrayList<>();
 
@@ -62,7 +59,7 @@ public class juego_espejo extends AppCompatActivity {
         }
         button.setAlpha(1);
         findViewById(R.id.button17).setEnabled(true);
-        pos++;
+
         if (this.sol.size() == round+1) {
             button = findViewById(R.id.button17);
             button.setText("Te toca");
@@ -161,7 +158,7 @@ public class juego_espejo extends AppCompatActivity {
         button.setText("Empezar");
 
         this.sol = new ArrayList();
-        this.pos=0;
+
         disableButtons();
     }
 

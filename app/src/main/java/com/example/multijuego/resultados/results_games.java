@@ -1,15 +1,14 @@
 package com.example.multijuego.resultados;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.multijuego.R;
+
+import java.util.Objects;
 
 public class results_games extends AppCompatActivity {
 
@@ -17,9 +16,8 @@ public class results_games extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        ActionBar mActionBar = getSupportActionBar();
 
 
         setContentView(R.layout.activity_results_games);
@@ -35,6 +33,12 @@ public class results_games extends AppCompatActivity {
     public void calculo(View view) {
         Intent intent = new Intent(getBaseContext(), result_graph.class);
         intent.putExtra("JUEGO", 1);
+        startActivity(intent);
+    }
+
+    public void simon(View view) {
+        Intent intent = new Intent(getBaseContext(), result_graph.class);
+        intent.putExtra("JUEGO", 2);
         startActivity(intent);
     }
 }

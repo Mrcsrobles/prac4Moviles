@@ -7,7 +7,6 @@ import androidx.room.Room;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.multijuego.MainActivity;
 import com.example.multijuego.R;
@@ -29,6 +28,7 @@ public class result_graph extends AppCompatActivity {
         //Obtenemos la ActionBar instalada por AppCompatActivity
         ActionBar actionBar = getSupportActionBar();
         //Establecemos el icono en la ActionBar
+        assert actionBar != null;
         actionBar.setDisplayShowHomeEnabled(true);
         // Activar flecha ir atrás (ir a la Parent Activity declarada en el manifest)
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -43,7 +43,7 @@ public class result_graph extends AppCompatActivity {
             findViewById(R.id.textView).setVisibility(View.INVISIBLE);
         }
 
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(dp);
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<>(dp);
 
         // on below line we are setting text color to our graph view.
         graphView.setTitleColor(R.color.purple_200);
@@ -60,7 +60,8 @@ public class result_graph extends AppCompatActivity {
         db = Room.databaseBuilder(getApplicationContext(),
                 PuntuacionDatabase.class, "Puntuacion").allowMainThreadQueries().build();
 
-        DataPoint[] lista = new DataPoint[db.PuntuacionDao().getGamePoints(juego).length];
+        int lon = db.PuntuacionDao().getGamePoints(juego).length;
+        DataPoint[] lista = new DataPoint[lon];
 
         int i = 0;
         for (Puntuacion punt : db.PuntuacionDao().getGamePoints(juego)) {

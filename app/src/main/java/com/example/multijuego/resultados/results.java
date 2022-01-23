@@ -1,18 +1,17 @@
 package com.example.multijuego.resultados;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
+
 import com.example.multijuego.MainActivity;
 import com.example.multijuego.R;
+
+import java.util.Objects;
 
 import puntuacion.Puntuacion;
 import puntuacion.PuntuacionDatabase;
@@ -24,9 +23,9 @@ public class results extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        ActionBar mActionBar = getSupportActionBar();
+
 
 
         setContentView(R.layout.activity_results);
@@ -36,13 +35,9 @@ public class results extends AppCompatActivity {
     private void setPuntuacion() {
         TextView tv = findViewById(R.id.textView4);
         int puntuacion = getIntent().getIntExtra("PUNTUACION", 0);
+        int juego = getIntent().getIntExtra("JUEGO", 0);
         tv.setText("Ha consgeguido " + puntuacion + " puntos");
-        almacenarPuntuacion(puntuacion);
-    }
-
-    public void puntuaciones(View view) {
-        Intent intent = new Intent(getBaseContext(), MainActivity.class);
-        startActivity(intent);
+        almacenarPuntuacion(puntuacion,juego);
     }
 
     public void salir(View view) {
@@ -54,14 +49,14 @@ public class results extends AppCompatActivity {
         return getIntent().getIntExtra("JUEGO", 0);
     }
 
-    private int getIntento() {
-        return db.PuntuacionDao().getAll().length + 1;
+    private int getIntento(int juego) {
+        return db.PuntuacionDao().getGamePoints(juego).length + 1;
     }
 
-    private void almacenarPuntuacion(int puntuacion) {
+    private void almacenarPuntuacion(int puntuacion,int juego) {
         db = Room.databaseBuilder(getApplicationContext(),
-                PuntuacionDatabase.class, "Puntuacion").allowMainThreadQueries().build();
-        Puntuacion nuevaPuntuacion = new Puntuacion(getIntento(), getJuegoInt(), puntuacion);
+                PuntuacionDatabase.class, "Puntuacion").allowMainThreadQueries().fallbackToDestructiveMigration().build();
+        Puntuacion nuevaPuntuacion = new Puntuacion(getIntento(juego), getJuegoInt(), puntuacion);
         db.PuntuacionDao().insertarPuntuacion(nuevaPuntuacion);
     }
 

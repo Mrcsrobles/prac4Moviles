@@ -1,12 +1,12 @@
 package com.example.multijuego;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.multijuego.Calculo.Calculo;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class instrucciones_simon_espejo extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class instrucciones_simon_espejo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instrucciones_simon_espejo);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
     }
 

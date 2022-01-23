@@ -1,16 +1,15 @@
 package com.example.multijuego;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.multijuego.Calculo.Instrucciones_calculo;
 import com.example.multijuego.colores.Instrucciones_palabras_color;
+
+import java.util.Objects;
 
 public class Juegos extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class Juegos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
 

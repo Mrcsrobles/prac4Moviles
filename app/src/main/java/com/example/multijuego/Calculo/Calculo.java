@@ -1,11 +1,6 @@
 package com.example.multijuego.Calculo;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -13,8 +8,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.multijuego.R;
 import com.example.multijuego.resultados.results;
+
+import java.util.Objects;
 
 public class Calculo extends AppCompatActivity {
     int contador = 1;
@@ -22,13 +21,20 @@ public class Calculo extends AppCompatActivity {
     int correctas = 0;
     int errores = 0;
 
+    private MediaPlayer correcto ;
+    private MediaPlayer incorrecto;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        ActionBar mActionBar = getSupportActionBar();
+
+
+        correcto = MediaPlayer.create(Calculo.this, R.raw.correct);
+        incorrecto = MediaPlayer.create(Calculo.this, R.raw.incorrect);
 
         setContentView(R.layout.activity_calculo);
         ponerPregunta();
@@ -57,14 +63,12 @@ public class Calculo extends AppCompatActivity {
         EditText num = findViewById(R.id.editTextNumber);
         if (Integer.parseInt(num.getText().toString()) == sol) {
             this.correctas++;
-            MediaPlayer mp = MediaPlayer.create(Calculo.this, R.raw.correct);
-            mp.start();
+            correcto.start();
             num.setText("");
             this.ponerPregunta();
         } else {
             errores++;
-            MediaPlayer mp = MediaPlayer.create(Calculo.this, R.raw.incorrect);
-            mp.start();
+            incorrecto.start();
 
             Toast.makeText(getApplicationContext(), "Error nº" + errores, Toast.LENGTH_SHORT).show();
             if (errores == 3) {

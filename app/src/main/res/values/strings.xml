@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Multijuego</string>
+    <string name="borrar_datos">Borrar datos</string>
+    <string name="resultado">Resultado</string>
+    <string name="probar">Probar</string>
+    <string name="c_lculo_r_pido">Cálculo rápido</string>
+    <string name="en_este_juego_va_a_aparecer_una_operaci_n_matem_tica_sencilla_en_el_centro_de_la_pantalla_y_t_tienes_que_introducir_la_respuesta_correcta_a_medida_que_vas_progresando_tambi_n_lo_hace_la_dificultad_y_ten_cuidado_porque_solo_tienes_3_fallos_antes_de_que_se_termine_la_partida">En este juego va a aparecer una operación matemática sencilla en el centro de la pantalla, y tú tienes que introducir la respuesta correcta, a medida que vas progresando también lo hace la dificultad, y ten cuidado, porque solo tienes 3 fallos antes de que se termine la partida</string>
+    <string name="el_juego_de_las_palabras_de_colores">El juego de las palabras de colores</string>
+    <string name="en_este_juego_aparecer_una_palabra_en_el_centro_de_la_pantalla_dicha_palabra_tendr_un_color_indicado_por_el_texto_y_el_texto_ser_de_un_color_tienes_que_indicar_si_tanto_el_texto_escrito_como_el_color_que_tiene_son_el_mismo_no_hay_l_mite_de_fallos_ni_de_tiempo_asi_que_tomatelo_con_calma">En este juego aparecerá una palabra en el centro de la pantalla, dicha palabra tendrá un color indicado por el texto y el texto será de un color, tienes que indicar si tanto el texto escrito como el color que tiene son el mismo. No hay límite de fallos ni de tiempo, asi que tomatelo con calma</string>
+    <string name="simon_says_espejo">Simon says espejo</string>
+    <string name="en_este_juego_habr_4_indicadores_de_colores_en_la_mitad_superior_que_se_iluminar_n_en_orden_cada_vez_que_le_des_al_bot_n_de_siguiente_y_cuando_sea_tu_turno_debes_repetir_la_secuencia_de_colores_que_se_iluminaron_pero_en_los_colores_de_la_parte_inferior_que_est_n_colocados_al_rev_s_de_los_de_arriba_solo_tienes_una_oportunidad_asi_que_piensalo_bien">En este juego habrá 4 indicadores de colores en la mitad superior que se iluminarán en orden cada vez que le des al botón de siguiente, y cuando sea tu turno debes repetir la secuencia de colores que se iluminaron PERO, en los colores de la parte inferior que están colocados al revés de los de arriba, solo tienes una oportunidad, asi que piensalo bien</string>
+    <string name="jugar">Jugar</string>
+    <string name="salir">Salir</string>
+    <string name="empezar">Empezar</string>
+    <string name="empezamos">Empezamos</string>
+    <string name="no_coincide">No coincide</string>
+    <string name="coincide">Coincide</string>
 </resources>

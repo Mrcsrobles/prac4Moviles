@@ -7,15 +7,15 @@ import androidx.room.Query;
 @Dao
 public interface PuntuacionDao {
     @Insert
-    public void insertarPuntuacion(Puntuacion... puntuaciones);
+    void insertarPuntuacion(Puntuacion... puntuaciones);
 
     @Query("DELETE FROM Puntuacion")
-    public void deletePuntuaciones();
+    void deletePuntuaciones();
 
     @Query("SELECT * FROM Puntuacion WHERE juego = :juegoSeleccionado")
-    public Puntuacion[] getGamePoints(int juegoSeleccionado);
+    Puntuacion[] getGamePoints(int juegoSeleccionado);
 
     @Query("SELECT * FROM Puntuacion")
-    public Puntuacion[] getAll();
+    Puntuacion[] getAll();
 
 }

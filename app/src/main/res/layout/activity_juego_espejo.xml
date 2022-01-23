@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:onClick="generateSequence"
-        android:text="Empezar"
+        android:text="@string/empezar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -26,7 +26,8 @@
         android:alpha="0.5"
         android:backgroundTint="#F44336"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button1a"
@@ -37,7 +38,8 @@
         android:alpha="0.5"
         android:backgroundTint="#4CAF50"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button2a"
@@ -48,7 +50,8 @@
         android:alpha="0.5"
         android:backgroundTint="#FFC107"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button0a" />
+        app:layout_constraintTop_toBottomOf="@+id/button0a"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button3a"
@@ -59,7 +62,8 @@
         android:alpha="0.5"
         android:backgroundTint="#2196F3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1a" />
+        app:layout_constraintTop_toBottomOf="@+id/button1a"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button2b"
@@ -71,7 +75,8 @@
         android:backgroundTint="#FFC107"
         android:onClick="b2"
         app:layout_constraintBottom_toTopOf="@+id/button0b"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button3b"
@@ -84,7 +89,8 @@
         android:backgroundTint="#03A9F4"
         android:onClick="b3"
         app:layout_constraintBottom_toTopOf="@+id/button1b"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button1b"
@@ -97,7 +103,8 @@
 
         android:onClick="b1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button0b"
@@ -109,5 +116,15 @@
         android:backgroundTint="#F44336"
         android:onClick="b0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-39dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
