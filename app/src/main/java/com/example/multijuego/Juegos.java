@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.multijuego.Calculo.Instrucciones_calculo;
 import com.example.multijuego.colores.Instrucciones_palabras_color;
+import com.example.multijuego.simon.instrucciones_simon_espejo;
 
 import java.util.Objects;
 

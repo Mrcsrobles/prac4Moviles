@@ -8,6 +8,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
+import com.example.multijuego.colores.juegoPalabrasColor;
+import com.example.multijuego.Calculo.Calculo;
+import com.example.multijuego.simon.juego_espejo;
 import com.example.multijuego.MainActivity;
 import com.example.multijuego.R;
 
@@ -65,6 +68,20 @@ public class results extends AppCompatActivity {
         Intent intent = new Intent(this,result_graph.class);
         intent.putExtra("PUNTUACION", getIntent().getIntExtra("PUNTUACION", 0));
         intent.putExtra("JUEGO", getIntent().getIntExtra("JUEGO", 0));
+        startActivity(intent);
+    }
+
+    public void reintentar(View view){
+        int juego = getIntent().getIntExtra("JUEGO", 0);
+        Intent intent=null;
+        if (juego==0){
+             intent= new Intent(this,juegoPalabrasColor.class);
+        }else if (juego==1){
+            intent= new Intent(this,Calculo.class);
+        }else{
+            intent= new Intent(this,juego_espejo.class);
+        }
+
         startActivity(intent);
     }
 }

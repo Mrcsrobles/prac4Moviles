@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1015625" />
         <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.15353260869565216" />
         <entry key="app/src/main/res/layout/activity_calculo.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_instrucciones_calculo.xml" value="0.12001811594202899" />
-        <entry key="app/src/main/res/layout/activity_instrucciones_palabras_color.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_instrucciones_palabras_color.xml" value="0.23837209302325582" />
         <entry key="app/src/main/res/layout/activity_instrucciones_simon_espejo.xml" value="0.14764492753623187" />
         <entry key="app/src/main/res/layout/activity_juego_espejo.xml" value="0.14764492753623187" />
         <entry key="app/src/main/res/layout/activity_juego_palabras_color.xml" value="0.2" />
@@ -15,9 +16,10 @@
         <entry key="app/src/main/res/layout/activity_result_colores.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_result_graph.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_resultados_calculo.xml" value="0.12001811594202899" />
-        <entry key="app/src/main/res/layout/activity_results.xml" value="0.12001811594202899" />
+        <entry key="app/src/main/res/layout/activity_results.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_results_games.xml" value="0.25" />
         <entry key="app/src/main/res/menu/action_bar.xml" value="0.25" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1015625" />
       </map>
     </option>
   </component>

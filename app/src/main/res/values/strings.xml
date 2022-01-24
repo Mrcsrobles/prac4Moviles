@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Multijuego</string>
+    <string name="app_name">Brain training</string>
     <string name="borrar_datos">Borrar datos</string>
     <string name="resultado">Resultado</string>
     <string name="probar">Probar</string>

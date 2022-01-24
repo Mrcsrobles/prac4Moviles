@@ -1,4 +1,4 @@
-package com.example.multijuego;
+package com.example.multijuego.simon;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.multijuego.R;
 import com.example.multijuego.resultados.results;
 
 import java.util.ArrayList;
@@ -27,10 +28,10 @@ public class juego_espejo extends AppCompatActivity {
         findViewById(R.id.button17).setEnabled(false);
         disableButtons();
 
-        findViewById(R.id.button0a).setAlpha(0.5F);
-        findViewById(R.id.button1a).setAlpha(0.5F);
-        findViewById(R.id.button2a).setAlpha(0.5F);
-        findViewById(R.id.button3a).setAlpha(0.5F);
+        findViewById(R.id.button0a).setAlpha(0.2F);
+        findViewById(R.id.button1a).setAlpha(0.2F);
+        findViewById(R.id.button2a).setAlpha(0.2F);
+        findViewById(R.id.button3a).setAlpha(0.2F);
         int lastButton;
         if (sol.size()==0) {
             lastButton= this.getRandomNumber(0, 3);
@@ -68,10 +69,10 @@ public class juego_espejo extends AppCompatActivity {
 
             this.sol.remove(this.sol.size()-1);
 
-            findViewById(R.id.button0a).setAlpha(0.5F);
-            findViewById(R.id.button1a).setAlpha(0.5F);
-            findViewById(R.id.button2a).setAlpha(0.5F);
-            findViewById(R.id.button3a).setAlpha(0.5F);
+            findViewById(R.id.button0a).setAlpha(0.2F);
+            findViewById(R.id.button1a).setAlpha(0.2F);
+            findViewById(R.id.button2a).setAlpha(0.2F);
+            findViewById(R.id.button3a).setAlpha(0.2F);
         }
     }
 
@@ -133,10 +134,10 @@ public class juego_espejo extends AppCompatActivity {
         findViewById(R.id.button3b).setEnabled(true);
 
 
-        findViewById(R.id.button0b).setAlpha(0.7F);
-        findViewById(R.id.button1b).setAlpha(0.7F);
-        findViewById(R.id.button2b).setAlpha(0.7F);
-        findViewById(R.id.button3b).setAlpha(0.7F);
+        findViewById(R.id.button0b).setAlpha(1F);
+        findViewById(R.id.button1b).setAlpha(1F);
+        findViewById(R.id.button2b).setAlpha(1F);
+        findViewById(R.id.button3b).setAlpha(1F);
     }
 
     private void disableButtons() {

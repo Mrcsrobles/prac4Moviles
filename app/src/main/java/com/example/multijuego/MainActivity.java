@@ -35,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//Call this method on button click
+    public void salir(View view){
+
+        finish();
+        System.exit(0);
+    }
 }

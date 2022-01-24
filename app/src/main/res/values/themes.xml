@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Multijuego" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#51D6FF</item>
-        <item name="colorPrimaryVariant">@color/teal_200</item>
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryVariant">#4CAF50</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#8D9EC6</item>
@@ -12,7 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:colorBackground">#CDA3F1</item>
+        <item name="android:colorBackground">#CACACA</item>
         <item name ="android:textColor">#0C2200</item>
         <item name ="android:textSize">22sp</item>
     </style>
